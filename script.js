@@ -165,13 +165,15 @@ const translations = {
     }
 };
 
+var PATH_TO_LANG = { cz: "cs", cs: "cs", en: "en", fr: "fr" };
+
+function langFromPath() {
+    var seg = location.pathname.split("/").filter(Boolean)[0];
+    return PATH_TO_LANG[seg];
+}
+
 function setLanguage(lang) {
     document.documentElement.lang = lang;
-    localStorage.setItem("wedding-lang", lang);
-
-    document.querySelectorAll(".lang-btn").forEach(function (btn) {
-        btn.classList.toggle("active", btn.dataset.lang === lang);
-    });
 
     var strings = translations[lang];
 
@@ -191,12 +193,6 @@ function setLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".lang-btn").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-            setLanguage(btn.dataset.lang);
-        });
-    });
-
-    var saved = localStorage.getItem("wedding-lang");
-    setLanguage(saved || "cs");
+    var lang = langFromPath() || "en";
+    setLanguage(lang);
 });
