@@ -1,0 +1,605 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    line-height: 1.7;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* ===== Utilities ===== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-cream {
+    background: #faf8f5;
+}
+
+.section-divider {
+    width: 50px;
+    height: 3px;
+    background: #d4a373;
+    margin: 12px auto 24px;
+}
+
+.section-divider.light {
+    background: #d4a373;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #d4a373;
+    padding: 14px 0;
+}
+
+.nav-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.lang-toggle {
+    display: flex;
+    gap: 4px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1.5px solid #2c3e50;
+    color: #2c3e50;
+    padding: 4px 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.lang-btn.active {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.lang-btn:hover:not(.active) {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+/* ===== Hero ===== */
+#hero {
+    position: relative;
+    height: 85vh;
+    min-height: 500px;
+    background: url('images/pictures_of_us/dancing.jpeg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.hero-names {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.hero-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* ===== Two-column layout ===== */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.col-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* ===== Sections shared spacing ===== */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 4px;
+}
+
+section h3 {
+    font-size: 1.4rem;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+/* ===== Ceremony ===== */
+.ceremony-details {
+    text-align: center;
+}
+
+.detail-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 8px;
+}
+
+.detail-time {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 4px 0;
+}
+
+.detail-venue {
+    font-weight: 700;
+    color: #333;
+    margin-top: 12px;
+}
+
+.detail-address {
+    font-size: 0.95rem;
+    margin: 4px 0 12px;
+}
+
+.map-link {
+    color: #d4a373;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.map-link:hover {
+    color: #b8854a;
+    text-decoration: underline;
+}
+
+.detail-arrival {
+    font-size: 0.95rem;
+    margin-top: 8px;
+}
+
+/* ===== Reception ===== */
+#reception p {
+    margin-bottom: 10px;
+}
+
+/* ===== Menu ===== */
+.menu-details {
+    text-align: center;
+}
+
+.menu-label {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 16px;
+    margin-bottom: 2px;
+}
+
+.menu-note {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 12px;
+}
+
+/* ===== Transition / Footer banners ===== */
+#transition,
+#footer-banner {
+    position: relative;
+    padding: 100px 0;
+    background: url('images/pictures_of_us/dancing.jpeg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-banner {
+    background-image: url('images/venue_pictures/venue_courtyward.jpeg');
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 40, 50, 0.6);
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ===== Info list (accommodation, transport) ===== */
+.info-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.info-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.info-list b {
+    color: #2c3e50;
+}
+
+.bus-note {
+    margin-top: 16px;
+    font-style: italic;
+    color: #d4a373;
+    font-weight: 700;
+}
+
+/* ===== Map column ===== */
+.map-label {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.venue-map {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* ===== Timeline / Harmonogram ===== */
+.timeline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 60px;
+    margin-top: 40px;
+}
+
+.timeline-item {
+    text-align: center;
+}
+
+.timeline-icon {
+    width: 70px;
+    height: 70px;
+    border: 1.5px solid #d4a373;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    color: #d4a373;
+}
+
+.timeline-icon svg {
+    width: 34px;
+    height: 34px;
+}
+
+.timeline-item h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+.timeline-time {
+    color: #d4a373;
+    margin-right: 4px;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: #777;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* ===== Info cards (dress code, colors) ===== */
+.info-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+    padding: 40px;
+}
+
+.info-card .col-image img {
+    border-radius: 4px;
+}
+
+.info-card .col-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-card .section-divider {
+    margin: 12px 0 24px;
+}
+
+/* ===== Color circles ===== */
+.color-circles-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-circles {
+    display: flex;
+    gap: 16px;
+}
+
+.circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ===== Gallery ===== */
+#gallery {
+    padding-bottom: 60px;
+}
+
+#gallery h2 {
+    font-style: italic;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.gallery-tall {
+    grid-row: span 2;
+}
+
+/* ===== RSVP ===== */
+#rsvp {
+    padding: 80px 0;
+}
+
+.rsvp-subtitle {
+    color: #d4a373;
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.rsvp-subtitle b {
+    color: #d4a373;
+}
+
+.btn-rsvp {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 40px;
+    background: #d4a373;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.btn-rsvp:hover {
+    background: #b8854a;
+}
+
+/* ===== Footer ===== */
+#footer-banner {
+    padding: 80px 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1023px) {
+    .two-col {
+        gap: 32px;
+    }
+
+    .timeline-grid {
+        gap: 28px 36px;
+    }
+
+    .info-card {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 50px 0;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* On mobile, put image before text for all two-col sections */
+    .col-text {
+        order: 2;
+    }
+    .col-image {
+        order: 1;
+    }
+
+    /* Menu: image comes after text on mobile */
+    #menu .col-text {
+        order: 1;
+    }
+    #menu .col-image {
+        order: 2;
+    }
+
+    .ceremony-details,
+    .menu-details {
+        text-align: center;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-card.two-col {
+        gap: 20px;
+    }
+
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gallery-grid .gallery-tall {
+        grid-row: auto;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-date {
+        font-size: 1.2rem;
+    }
+
+    #hero {
+        height: 70vh;
+        min-height: 400px;
+    }
+
+    #transition,
+    #footer-banner {
+        padding: 60px 0;
+    }
+
+    .nav-brand {
+        font-size: 0.95rem;
+    }
+
+    .lang-btn {
+        padding: 3px 8px;
+        font-size: 0.75rem;
+    }
+
+    .color-circles {
+        gap: 10px;
+    }
+
+    .circle {
+        width: 42px;
+        height: 42px;
+    }
+}
