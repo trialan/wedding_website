@@ -122,7 +122,7 @@ h1, h2, h3, h4 {
     position: relative;
     height: 85vh;
     min-height: 500px;
-    background: url('images/pictures_of_us/dancing.jpeg') center 60% / cover no-repeat;
+    background: url('images/pictures_of_us/dancing.jpeg') center 35% / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,6 +433,15 @@ section h3 {
 
 .info-card .section-divider {
     margin: 12px 0 24px;
+}
+
+#dresscode .info-card .col-text {
+    text-align: center;
+}
+
+#dresscode .info-card .col-text .section-divider {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #colors .info-card.two-col > .col-text:not(.color-circles-col) h2 {
