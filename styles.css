@@ -387,11 +387,13 @@ section h3 {
     justify-content: center;
     margin: 0 auto 14px;
     color: #d4a373;
+    overflow: hidden;
 }
 
-.timeline-icon svg {
-    width: 34px;
-    height: 34px;
+.timeline-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
 .timeline-item h4 {
