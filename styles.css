@@ -459,6 +459,33 @@ section h3 {
     text-align: left;
 }
 
+/* ===== Travel Guide ===== */
+#travelguide .info-card .col-text {
+    text-align: center;
+}
+
+#travelguide .info-card .section-divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-download {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 36px;
+    background: #d4a373;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.btn-download:hover {
+    background: #b8854a;
+}
+
 /* ===== Color circles ===== */
 .color-circles-col {
     display: flex;
