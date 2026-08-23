@@ -102,7 +102,7 @@ const translations = {
         colorsTitle: "Couleurs du mariage",
         colorsText: "Nous serons ravis si vous soutenez le thème coloré de notre mariage. :)",
         galleryTitle: "Nous deux <3",
-        rsvpSubtitle: 'Merci de nous confirmer votre présence avant le <b>1.8.2026</b>.',
+        rsvpSubtitle: 'Merci de nous confirmer votre présence.',
         rsvpButton: "Remplir le RSVP",
         footerText: "Nous avons hâte de vous voir !",
     },
@@ -156,7 +156,7 @@ const translations = {
         colorsTitle: "Wedding Colors",
         colorsText: "We'd love it if you supported the color theme of our wedding. :)",
         galleryTitle: "The Two of Us <3",
-        rsvpSubtitle: 'Please let us know if you\'ll attend by <b>August 1, 2026</b>.',
+        rsvpSubtitle: 'Please let us know if you\'ll attend.',
         rsvpButton: "Fill out RSVP",
         footerText: "We look forward to seeing you!",
     }
