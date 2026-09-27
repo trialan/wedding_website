@@ -505,6 +505,35 @@ section h3 {
     display: inline-block;
 }
 
+/* ===== Wedding Bus Info (inside Transport section) ===== */
+.bus-detail-row {
+    margin-top: 48px;
+}
+
+.bus-info-details .section-divider {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.bus-info-details .map-link {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.bus-contact {
+    margin-top: 16px;
+    font-weight: 400;
+    color: #555;
+}
+
+.bus-contact b {
+    color: #2c3e50;
+}
+
+.bus-info-details p {
+    margin-bottom: 10px;
+}
+
 /* ===== Gallery ===== */
 #gallery {
     padding-bottom: 60px;
